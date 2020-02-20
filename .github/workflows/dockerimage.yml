@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker.pkg.github.com/Morendil/docker-hie/docker-hie
+      run: docker build . --file Dockerfile --tag docker.pkg.github.com/morendil/docker-hie/docker-hie
     - name: Push Docker image to Github package registry
-      run: docker push docker.pkg.github.com/Morendil/docker-hie/docker-hie
+      run: docker push docker.pkg.github.com/morendil/docker-hie/docker-hie
